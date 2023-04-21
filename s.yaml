@@ -13,8 +13,6 @@ services:
       pre-deploy:
         - run: pip3 install -r requirements.txt -t depends/
           path: ./code
-        - run: python3.9 main.py
-          path: ./code
     props:
       region: ${vars.region}
       service:
