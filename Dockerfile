@@ -6,4 +6,4 @@ ADD /code /app
 RUN pip3 install -r requirements.txt -t depends/
 
 EXPOSE 9000
-ENTRYPOINT ["python3.8 index.py"]
+ENTRYPOINT ["python index.py"]
